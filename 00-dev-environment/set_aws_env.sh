@@ -22,7 +22,7 @@ unset AWS_SECRET_ACCESS_KEY
 #    arn:aws:iam::12DIGITACCNTNUMBER:mfa/USERNAME
 if [ -z "$AWS_SERIAL_NUMBER" ]
 then
-    echo "this should be set as an environment variable before running this script..."
+    echo "AWS_SERIAL_NUMBER should be set as an environment variable before running this script..."
     exit 0
 else
     echo "your AWS_SERIAL_NUMBER is: $AWS_SERIAL_NUMBER ..."
